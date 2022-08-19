@@ -7,4 +7,4 @@ This repository contains:
 * :file_folder: Data analysis examples
 
 ## Python/Jupyter Notebook
-- [x] Tkinter modern template 
+- [x] [Tkinter modern template](https://github.com/Pyother/code-learning/blob/main/python/tkinter_modern_gui.ipynb)
