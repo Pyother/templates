@@ -1,4 +1,4 @@
-# Code Learning Repository
+# Templates Repository
 
 Often, when working on large projects, **ready-made templates** are useful, thanks to which you can save time. 
 This repository contains: 
@@ -7,4 +7,11 @@ This repository contains:
 * :file_folder: Data analysis examples
 
 ## Python/Jupyter Notebook
-- [x] Tkinter modern template 
+- [x] [Tkinter modern template](https://github.com/Pyother/code-learning/blob/main/python/tkinter_modern_gui.ipynb)
+
+## Java 
+- [ ] Swing UI template 
+
+## JavaScript 
+
+
