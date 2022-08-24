@@ -8,10 +8,10 @@ This repository contains:
 
 ## Python/Jupyter Notebook
 - [x] [Tkinter modern template](https://github.com/Pyother/code-learning/blob/main/python/tkinter_modern_gui.ipynb)
+- [ ] FPDF output handling
 
 ## Java 
 - [ ] Swing UI template 
 
 ## JavaScript 
-
 
