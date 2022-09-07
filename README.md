@@ -14,4 +14,5 @@ This repository contains:
 - [ ] Swing UI template 
 
 ## JavaScript 
+- [ ] [Bootstrap survey design](https://github.com/Pyother/templates/tree/main/js/bootstrap_survey_design) 
 
