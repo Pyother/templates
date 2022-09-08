@@ -1,6 +1,9 @@
 
 .white-space {
     width: 100%;
-    height: 52px;
+    height: 32px;
     
+}
+.menu {
+    background-color: azure;
 }

@@ -9,18 +9,47 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         <style>
+
             
-            .navbar {
+            h2 {
                 font-family: 'Raleway', sans-serif;
                 font-size: 12px;
-                border: 0px;
-                background: rgba(168, 204, 114, 0.3);
             }
-
+            .navbar {
+                font-family: 'Raleway', sans-serif;
+                font-size: 18px;
+                border: 0px;
+                background-color: white;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                margin: 0%;
+            }
+            
+            .navbar .navbar-brand {
+                color: blue !important;
+            }
+            .fixed {
+                position: fixed;
+                width: 25%;
+            }
+            .survey {
+                padding-top: 10px;
+            }
+            .scrollit {
+                float: right;
+                width: 75%;
+            }
+            .menu {
+                padding-top: 10%px;
+                background-color: azure;
+                height: 100vh;
+            }
+            
 
         </style>
     </head>
@@ -37,6 +66,22 @@
             
             <div class="white-space"></div>
 
+            <div class="row">
+                <div class="col-sm-9 col-md-9 col-lg-9 scrollit" id="survey">
+                    <div class="container-fluid" id="sectionOne">
+                        <h2>First Header</h2>
+                    </div>
+                    <div class="container-fluid" id="sectionSecond">
+                        <h2>Second Header</h2>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-sm-3 col-lg-3 fixed">
+                    <div class="menu">
+                        <h2>Menu here</h2>
+
+                    </div>
+                </div>
+            </div>
             
 
 
