@@ -1,0 +1,14 @@
+{
+    // Użyj funkcji IntelliSense, aby uzyskać informacje o możliwych atrybutach.
+    // Najedź kursorem, aby wyświetlić opisy istniejących atrybutów.
+    // Aby uzyskać więcej informacji, odwiedź stronę: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open main.html",
+            "file": "c:\\Nauka\\Engineer_Thesis\\Code_Learning\\code-learning\\templates-2\\js\\bootstrap_survey_design\\main.html"
+        }
+    ]
+}
