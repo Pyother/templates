@@ -39,3 +39,46 @@
     width: 100%;
     height: auto;
 }
+.collapse-button {
+    padding: 10px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: white;
+    border: 0;
+    box-shadow: rgba(9, 30, 6, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    border-radius: 2px;
+}
+.collapse-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    animation: buttonAnimation 5s linear;
+}
+@keyframes buttonAnimation {
+    0%  {border-width: 0px; border-style: solid;}
+    100%{border-width: 1px; border-style: solid;}
+}
+.formStyle {
+    background-color: white;
+    padding: 10px;
+    width: 400px;
+    margin-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    font-size: 1em;
+    font-weight: 100;
+    color: indigo;
+}
+.select-form {
+    background-color: white;
+    padding: 10px;
+    width: 400px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    font-size: 1em;
+    font-weight: 100;
+}
