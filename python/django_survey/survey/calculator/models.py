@@ -1,34 +1,18 @@
 from django.db import models
 
-class Pracodawca(models.Model):
-    nazwa_pracodawcy = models.CharField(max_length=100)
+class Question(models.Model):
+    feature_1 = models.CharField(max_length=100)
+    feature_2 = models.CharField(max_length=100)
+    feature_3 = models.CharField(max_length=100)
+    feature_4 = models.CharField(max_length=100)
+    feature_5 = models.CharField(max_length=100)
+    feature_6 = models.CharField(max_length=100)
+    feature_7 = models.DateField('Hiring date')
+    feature_8 = models.CharField(max_length=100)
+    feature_9 = models.CharField(max_length=100)
+    feature_10 = models.CharField(max_length=100)
+    feature_11 = models.CharField(max_length=100)
 
-class System(models.Model):
-    nazwa_systemu = models.CharField(max_length=100)
-
-class Stanowisko(models.Model):
-    nazwa_stanowiska = models.CharField(max_length=100)
-
-class Płeć(models.Model):
-    nazwa_płci = models.CharField(max_length=100)
-
-class Wynagrodzenie(models.Model):
-    kwota_wynagrodzenia = models.IntegerField(max_length=100)
-
-class DataZatrudnienia(models.Model):
-    data_zatrudnienia = models.DateField('data zatrudnienia')
-
-class DodatekFunkcyjny(models.Model):
-    nazwa_dodatku = models.CharField(max_length=100)
-
-class Komentarz(models.Model):
-    imie_rekrutera = models.CharField(max_length=100)
-    nazwisko_rekrutera = models.CharField(max_length=100)
-    email_rekrutera = models.CharField(max_length=100)
-
-class DaneKandydata(models.Model):
-    imie_kandydata = models.CharField(max_length=100)
-    nazwisko_kandydata = models.CharField(max_length=100)
-
-
-
+class Choice(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    votes = models.IntegerField(default=0)
