@@ -16,10 +16,11 @@ class Question(models.Model):
     feature_10 = models.CharField(max_length=100)
     feature_11 = models.CharField(max_length=100)
 
+    array_elements = [feature_1, feature_2, feature_3, feature_4, feature_5, 
+    feature_6, feature_7, feature_8, feature_9, feature_10, feature_11]
 
-    def publishment(self):
-        return self.feature_4 >= timezone.now() - datetime.timedelta(days=1)
-
+    def display(self):
+        return self.array_elements
 
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
