@@ -17,7 +17,7 @@ Web survey interface design created using the Bootstrap library.
 
 
 ## Python/Jupyter Notebook
-- [x] [Tkinter modern template](https://github.com/Pyother/code-learning/blob/main/python/tkinter_modern_gui.ipynb)
+- [x] [Tkinter modern template](https://github.com/Pyother/templates/blob/main/python/tkinter_modern_gui/tkinter_modern_gui.ipynb)
 - [ ] [Django survey](https://github.com/Pyother/templates/tree/main/python/django_survey/survey)
 - [ ] [Writing document using pyFPDF](https://github.com/Pyother/code-learning/blob/main/python/document_pyfpdf/document_pyfpdf.py)
 

@@ -2,7 +2,7 @@ import datetime
 from django.db import models
 from django.utils import timezone
 
-class Question(models.Model):
+class Candidate(models.Model):
 
     feature_1 = models.CharField(max_length=100)
     feature_2 = models.CharField(max_length=100)
@@ -10,7 +10,7 @@ class Question(models.Model):
     feature_4 = models.CharField(max_length=100)
     feature_5 = models.CharField(max_length=100)
     feature_6 = models.CharField(max_length=100)
-    feature_7 = models.DateField('Hiring date')
+    feature_7 = models.DateField(default='01/01/2023')
     feature_8 = models.CharField(max_length=100)
     feature_9 = models.CharField(max_length=100)
     feature_10 = models.CharField(max_length=100)
@@ -23,6 +23,6 @@ class Question(models.Model):
         return self.array_elements
 
 class Choice(models.Model):
-    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    question = models.ForeignKey(Candidate, on_delete=models.CASCADE)
     votes = models.IntegerField(default=0)
 
