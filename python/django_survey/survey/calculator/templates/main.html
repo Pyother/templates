@@ -1,11 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Site</title>
+        {% load bootstrap5 %}
+        {% bootstrap_css %{% bootstrap_javascript %}
+        {% bootstrap_messages %}
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+        <style>
 
-<h2 style="color: #778899;">Form to fill</h2>
+        </style>
+    </head>
+</html>
 
-<form action="" method="post" style="
-display: grid; width: 400px; color: #778899;">
+<body>
+    <h2 style="color: #778899;">Form to fill</h2>
 
-    {% csrf_token %}
-    {{form}}<br><br>
-    <input type="submit">
+    <form action="" method="post" style="
+    display: grid; width: 400px; color: #778899;">
 
-</form>
+        {% csrf_token %}
+        {{form}}<br><br>
+        <input type="submit">
+    </form>
+</body>
+
+
+
+
