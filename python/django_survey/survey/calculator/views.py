@@ -14,6 +14,7 @@ def index(request):
             form.save()
 
     context = {'form': form}
-    return render(request, 'index.html', context)
+    return render(request, 'main.html', context)
     
-
+class EditorView(TemplateView):
+    template_name = 'editor.html'
