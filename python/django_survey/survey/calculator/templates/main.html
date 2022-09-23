@@ -4,26 +4,73 @@
         <meta charset="UTF-8">
         <title>Survey Site</title>
         {% load bootstrap5 %}
-        {% bootstrap_css %{% bootstrap_javascript %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
         {% bootstrap_messages %}
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet"> 
         <script src="js/bootstrap.min.js"></script>
         <style>
+            .header {
+                top: 0px;
+                width: 100%;
+                height: auto;
+                background-color: white;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                padding: 2%;
+            }
+            .content {
+                right: 0px;
+                width: 100%;
+                height: auto;
+                background-color: snow;
+                padding: 2%;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+            }
+            h1 {
+                font-family: 'Rubik Dirt', cursive;
+                font-size: 48px;
+                font-weight: bold;
+            }
+            h2 {
+                font-family: 'Raleway', sans-serif;
+                font-size: 32px;
+                font-weight: bold;
+            }
 
         </style>
     </head>
 </html>
 
 <body>
-    <h2 style="color: #778899;">Form to fill</h2>
+    <div class="container-fluid">
+        <div class="header">
+            <h1>Your Survey</h1>
+        </div>
+    </div>
 
-    <form action="" method="post" style="
-    display: grid; width: 400px; color: #778899;">
+    <div class="container-fluid">
+        <div class="content">
+            <form action="" method="post" style="
+            display: grid; width: 400px; color: #778899;">
 
-        {% csrf_token %}
-        {{form}}<br><br>
-        <input type="submit">
+            {% csrf_token %}
+            {{form}}<br><br>
+            <input type="submit">
+        </div>
     </form>
+    </div>
+
+    <div class="container-fluid">
+        
+    </div>
 </body>
 
 
