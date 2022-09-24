@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from calculator.forms import CandidateForm
 from django.views.generic import TemplateView
 from multiprocessing import context
+from .forms import *
 
 def index(request):
     

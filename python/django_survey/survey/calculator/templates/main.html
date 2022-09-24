@@ -22,7 +22,7 @@
                 display: grid;
                 justify-content: center;
                 align-items: center;
-                padding: 2%;
+                padding: 4%;
             }
             .content {
                 right: 0px;
@@ -33,16 +33,49 @@
                 display: grid;
                 justify-content: center;
                 align-items: center;
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            }
+            .footer {
+                bottom: 0px;
+                width: 100%;
+                height: auto;
+                background-color: white;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                padding: 2%;
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            }
+            .my-form {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+            }
+            .my-input {
+                width: 600px;
+            }
+            .image_text {
+                background-image: url(https://picsum.photos/id/865/300/100);
+                background-size: cover;
             }
             h1 {
-                font-family: 'Rubik Dirt', cursive;
-                font-size: 48px;
+                /*font-family: 'Rubik Dirt', cursive;*/
+                position: flex;
+                font-size: 120px;
                 font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 15px;
+                background-image: url(header.jpg);
+                background-size: cover;
             }
             h2 {
                 font-family: 'Raleway', sans-serif;
                 font-size: 32px;
                 font-weight: bold;
+            }
+            p {
+                font-family: 'Raleway', sans-serif;
+                font-size: 20px;
             }
 
         </style>
@@ -50,26 +83,26 @@
 </html>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding: 0px;">
         <div class="header">
-            <h1>Your Survey</h1>
+            <h1 class="image-text">Your Survey</h1>
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding: 0px;">
         <div class="content">
-            <form action="" method="post" style="
-            display: grid; width: 400px; color: #778899;">
-
-            {% csrf_token %}
-            {{form}}<br><br>
-            <input type="submit">
+            <form class="my-form" action="" method="post">
+                {% csrf_token %}
+                {{form}}<br><br>
+            <input class="my-input" type="submit">
         </div>
     </form>
     </div>
 
-    <div class="container-fluid">
-        
+    <div class="container-fluid" style="padding: 0px;">
+        <div class="footer">
+            <p>Place for some info</p>
+        </div>
     </div>
 </body>
 
