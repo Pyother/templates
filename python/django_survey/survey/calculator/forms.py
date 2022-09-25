@@ -7,9 +7,7 @@ from calculator.views import *
 class CandidateForm(ModelForm):
     class Meta:
         model = Candidate
-        fields = {'feature_1', 'feature_2', 'feature_3', 'feature_4'}
-        widgets = {
-            
-        }
+        fields = '__all__'
+        
         
         
