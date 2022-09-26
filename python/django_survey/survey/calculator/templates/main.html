@@ -7,6 +7,7 @@
         {% bootstrap_css %}
         {% bootstrap_javascript %}
         {% bootstrap_messages %}
+        {% load crispy_forms_tags %}
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
@@ -92,7 +93,7 @@
         <div class="content">
             <form class="my-form" action="" method="post">
                 {% csrf_token %}
-                {{form}}<br><br>
+                {{form|crispy}}<br><br>
             <input class="my-input" type="submit">
         </div>
     </form>
