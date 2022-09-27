@@ -16,6 +16,9 @@ def index(request):
 
     context = {'form': form}
     return render(request, 'main.html', context)
+
+def redirect_editor(request):
+    return render(request, 'editor.html')
     
 class EditorView(TemplateView):
     template_name = 'editor.html'
