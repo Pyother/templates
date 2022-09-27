@@ -16,6 +16,7 @@ class CandidateForm(ModelForm):
                     'width: 700px;'
                     'background-color: white;'
                     'border: 0;'
+                    'border-radius: 0px;'
                     'box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;'  
             }, choices={
                 ("Feature 1", "Feature 1"),
@@ -29,6 +30,7 @@ class CandidateForm(ModelForm):
                     'width: 700px;'
                     'background-color: white;'
                     'border: 0;'
+                    'border-radius: 0px;'
                     'box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;'  
             }, choices={
                 ("Feature 1", "Feature 1"),
@@ -42,6 +44,7 @@ class CandidateForm(ModelForm):
                     'width: 700px;'
                     'background-color: white;'
                     'border: 0;'
+                    'border-radius: 0px;'
                     'box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;'  
             }),
 
@@ -51,6 +54,7 @@ class CandidateForm(ModelForm):
                     'width: 700px;'
                     'background-color: white;'
                     'border: 0;'
+                    'border-radius: 0px;'
                     'box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;'  
             }),
 
@@ -60,6 +64,7 @@ class CandidateForm(ModelForm):
                     'width: 700px;'
                     'background-color: white;'
                     'border: 0;'
+                    'border-radius: 0px;'
                     'box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;'  
             }),
 
@@ -69,6 +74,7 @@ class CandidateForm(ModelForm):
                     'width: 700px;'
                     'background-color: white;'
                     'border: 0;'
+                    'border-radius: 0px;'
                     'box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;'  
             }),
 
@@ -78,6 +84,7 @@ class CandidateForm(ModelForm):
                     'width: 700px;'
                     'background-color: white;'
                     'border: 0;'
+                    'border-radius: 0px;'
                     'box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;'  
             }),
 
@@ -87,6 +94,7 @@ class CandidateForm(ModelForm):
                     'width: 700px;'
                     'background-color: white;'
                     'border: 0;'
+                    'border-radius: 0px;'
                     'box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;'  
             }),
 
@@ -96,6 +104,7 @@ class CandidateForm(ModelForm):
                     'width: 700px;'
                     'background-color: white;'
                     'border: 0;'
+                    'border-radius: 0px;'
                     'box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;'  
             }),
 
@@ -105,6 +114,7 @@ class CandidateForm(ModelForm):
                     'width: 700px;'
                     'background-color: white;'
                     'border: 0;'
+                    'border-radius: 0px;'
                     'box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;'  
             }),
 
@@ -114,6 +124,7 @@ class CandidateForm(ModelForm):
                     'width: 700px;'
                     'background-color: white;'
                     'border: 0;'
+                    'border-radius: 0px;'
                     'box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;'  
             })
 
