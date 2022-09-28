@@ -1,8 +1,15 @@
 from dataclasses import fields
 from pyexpat import model
-from django.forms import ModelForm, widgets, TextInput, Select, NumberInput, DateInput
+from django.forms import ModelForm, TextInput, Select, DateInput
 from calculator.models import *
 from calculator.views import *
+from django import forms
+
+
+class SystemForm(ModelForm):
+    class Meta:
+        model = System
+        fields = '__all__'
 
 class CandidateForm(ModelForm):
     class Meta:
@@ -130,4 +137,5 @@ class CandidateForm(ModelForm):
 
         }
         
-        
+
+

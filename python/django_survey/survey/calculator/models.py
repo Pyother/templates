@@ -1,4 +1,5 @@
 import datetime
+import sys
 from django.db import models
 from django.utils import timezone
 
@@ -27,3 +28,15 @@ class Choice(models.Model):
     question = models.ForeignKey(Candidate, on_delete=models.CASCADE)
     votes = models.IntegerField(default=0)
 
+class System(models.Model):
+    employer = models.CharField("Employer", max_length=100)
+    substract = models.CharField("Substract", max_length=100)
+    system = models.CharField("System", max_length=100)
+    value = models.IntegerField("Value", max_length=100)
+    border_date = models.DateField("Border date", default='01/01/2023')
+    comment = models.CharField("Comment", max_length = 160)
+
+    tab = [employer, substract, system, value, border_date, comment]
+
+    def display(self):
+        return self.tab
