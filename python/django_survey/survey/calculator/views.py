@@ -1,3 +1,4 @@
+import csv
 from django.shortcuts import render
 from django.http import HttpResponse
 from calculator.forms import CandidateForm
@@ -59,3 +60,23 @@ def Import_csv(request):
         print(identifier)
      
     return render(request, 'importexcel.html',{})
+
+def export_users_csv(request):
+    
+     
+    if request.method == 'POST':
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename="EmployeeData.csv"'        
+        writer = csv.writer(response)
+        writer.writerow(['Employee Detail'])       
+                 
+         
+        writer.writerow(['Employee Code','Employee Name','Relation Name','Last Name','gender','DOB','e-mail','Contact No' ,'Address' ,'exprience','Qualification'])
+ 
+        users = System.objects.all().values_list('Empcode','firstName' , 'middleName' , 'lastName','gender','DOB','email','phoneNo' ,'address','exprience','qualification')
+         
+        for user in users:
+            writer.writerow(user)
+        return response
+ 
+    return render(request, 'importexcel.html')
