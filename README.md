@@ -17,12 +17,21 @@ Web survey interface design created using the Bootstrap library.
 
 
 ## Python/Jupyter Notebook
+- [x] [Django survey](https://github.com/Pyother/templates/tree/main/python/django_survey/survey)
+
+
+
 - [x] [Tkinter modern template](https://github.com/Pyother/templates/blob/main/python/tkinter_modern_gui/tkinter_modern_gui.ipynb)
-- [ ] [Django survey](https://github.com/Pyother/templates/tree/main/python/django_survey/survey)
+
+![obraz](https://user-images.githubusercontent.com/77791657/193429701-4f9029b5-ea3f-467c-bae4-109a204b8a97.png)
+<div align="center"><em>Modern GUI design in Tkinter.</em></div>
+
 - [ ] [Writing document using pyFPDF](https://github.com/Pyother/code-learning/blob/main/python/document_pyfpdf/document_pyfpdf.py)
 
 
-## Java 
-- [ ] Swing UI template 
+
+
+
+
 
 
