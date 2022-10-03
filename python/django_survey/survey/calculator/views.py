@@ -1,15 +1,16 @@
-import csv
 from django.shortcuts import render
-from django.http import HttpResponse
 from calculator.forms import CandidateForm
 from django.views.generic import TemplateView
 from multiprocessing import context
 from .forms import *
 import datetime as dt
 import pandas as pd
-import os
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
+from .resources import SystemResource
+from django.contrib import messages
+from tablib import Dataset
+from django.http import HttpResponse
 
 def index(request):
     
@@ -61,22 +62,21 @@ def Import_csv(request):
      
     return render(request, 'importexcel.html',{})
 
-def export_users_csv(request):
-    
-     
+def simple_upload(request):
+
     if request.method == 'POST':
-        response = HttpResponse(content_type='text/csv')
-        response['Content-Disposition'] = 'attachment; filename="EmployeeData.csv"'        
-        writer = csv.writer(response)
-        writer.writerow(['Employee Detail'])       
-                 
-         
-        writer.writerow(['Employee Code','Employee Name','Relation Name','Last Name','gender','DOB','e-mail','Contact No' ,'Address' ,'exprience','Qualification'])
- 
-        users = System.objects.all().values_list('Empcode','firstName' , 'middleName' , 'lastName','gender','DOB','email','phoneNo' ,'address','exprience','qualification')
-         
-        for user in users:
-            writer.writerow(user)
-        return response
- 
-    return render(request, 'importexcel.html')
+        system_resource = SystemResource()
+        dataset = Dataset()
+        new_system = request.FILES['myfile']
+
+        if new_system.name.endswith('xlsx'):
+            messages.info(request, 'Wrong format')
+            return render(request, 'upload.html')
+
+        imported_data = dataset.load(new_system.read(), format='xlsx')
+        
+        for data in imported_data:
+            value = System(data[0], data[1], data[2], data[3], data[4], data[5])
+            value.save()
+    
+    return render(request, 'upload.html')
