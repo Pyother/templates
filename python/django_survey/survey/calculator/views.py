@@ -62,6 +62,9 @@ def Import_csv(request):
      
     return render(request, 'importexcel.html',{})
 
+def redirect_output(request):
+    return render(request, 'output.html')
+
 def simple_upload(request):
 
     if request.method == 'POST':
@@ -80,3 +83,4 @@ def simple_upload(request):
             value.save()
     
     return render(request, 'upload.html')
+

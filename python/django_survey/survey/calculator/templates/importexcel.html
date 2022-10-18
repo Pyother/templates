@@ -8,6 +8,7 @@
         {% bootstrap_javascript %}
         {% bootstrap_messages %}
         {% load crispy_forms_tags %}
+        <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
@@ -116,7 +117,7 @@
                 padding: 1em;
                 border: 0;
             }
-            h1 {
+            h4 {
                 font-family: 'Raleway', sans-serif;
                 position: flex;
                 font-size: 20px;
@@ -142,7 +143,7 @@
                     <form method="post" enctype="multipart/form-data">
                         {% csrf_token %}
                         <div class="x_panel">
-                            <h1>upload new file</h1><br>
+                            <h4>upload new file</h4><br>
                             <label for="file-upload" class="my-label" style="width: 600px;">
                                 <input class="my-input" type="file" name="my-file" id="file-upload"/>
                             </label><br>

@@ -164,11 +164,13 @@
 
     <div class="container-fluid" style="padding: 0px;">
         <div class="content" id="sectionContent">
-            <form class="my-form" action="" method="post">
+            <form class="my-form" action="{% url 'output' %}" method="post">
                 {% csrf_token %}
                 {{form|crispy}}<br><br>
             <button class="button-48" role="button" type="submit">
-                <span class="text">Submit answers</span>
+                <span class="text">
+                    Submit answers
+                </span>
             </button>
         </div>
     </form>

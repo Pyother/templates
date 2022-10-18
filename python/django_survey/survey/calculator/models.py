@@ -2,7 +2,7 @@ import datetime
 import sys
 from django.db import models
 from django.utils import timezone
-
+from .output import PDF
 
 class Candidate(models.Model):
 
@@ -21,6 +21,8 @@ class Candidate(models.Model):
     array_elements = [feature_1, feature_2, feature_3, feature_4, feature_5, 
     feature_6, feature_7, feature_8, feature_9, feature_10, feature_11]
 
+    
+
     def display(self):
         return self.array_elements
 
@@ -29,6 +31,7 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
 
 class System(models.Model):
+
     employer = models.CharField("Employer", max_length=100)
     substract = models.CharField("Substract", max_length=100)
     system = models.CharField("System", max_length=100)
