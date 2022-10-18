@@ -7,11 +7,69 @@
         {% bootstrap_css %}
         {% bootstrap_javascript %}
         {% bootstrap_messages %}
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .header {
+                top: 0px;
+                width: 100%;
+                height: auto;
+                background: linear-gradient(to left, rgb(193, 211, 231), rgb(255, 2555, 255));
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 4%;
+            }
+            .content {
+                right: 0px;
+                width: 100%;
+                height: auto;
+                background: linear-gradient(to left, rgb(193, 211, 231), rgb(255, 2555, 255));
+                padding: 2%;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+            }
+            .footer {
+                bottom: 0px;
+                width: 100%;
+                height: auto;
+                background: linear-gradient(to left, rgb(193, 211, 231), rgb(255, 2555, 255));
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                padding: 2%;
+            }
+            
+        </style>
     </head>
     <body>
         <main>
+            {% block content %}
+            <div class="container-fluid">
+                <div class="header">
 
+                </div>
+            </div>
+            <div class="container-fluid" style="width: 100%;">
+                <div class="content" style="align-items: center; justify-content: center; display: flex;">
+                    
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="footer" style="margin: 0px;">
+
+                </div>
+            </div>
+            {% endblock %}
         </main>
     </body>
 </html>
