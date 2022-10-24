@@ -1,17 +1,9 @@
-from re import X
 from django.shortcuts import render
-from calculator.forms import CandidateForm
-from django.views.generic import TemplateView
 from multiprocessing import context
-from .forms import *
-import datetime as dt
-import pandas as pd
 from django.conf import settings
-from django.core.files.storage import FileSystemStorage
-from .resources import SystemResource
-from django.contrib import messages
-from tablib import Dataset
-from django.http import HttpResponse
+from .forms import CandidateForm
+from .calculator import Calculator
+from .forms import *
 
 def index(request):
     
@@ -35,8 +27,12 @@ def index(request):
     print("ARRAY ELEMENTS")
     print(array_elements)
 
-    # Create output file:
+    # Create an object of the Calculator class, to compute values:
+    values = Calculator(array_elements=array_elements) 
+
+    # Create an output file:
     file = PDF(array_elements=array_elements)
+
     context = {'form': form}
     return render(request, 'main.html', context)
 
