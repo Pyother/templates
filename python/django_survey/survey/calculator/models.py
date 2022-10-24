@@ -16,15 +16,6 @@ class Candidate(models.Model):
     feature_9 = models.CharField('Feature 9 (optional):', max_length=100, blank=True)
     feature_10 = models.CharField('Feature 10 (optional):', max_length=100, blank=True)
     feature_11 = models.CharField('Feature 11 (optional):', max_length=100, blank=True)
-
-    # List of all features:
-    array_elements = str([feature_1, feature_2, feature_3,
-    feature_4, feature_5, feature_6,
-    feature_7, feature_8, feature_9, 
-    feature_10, feature_11])
-
-    # Candidate's file:
-    pdf = PDF(array_elements=array_elements)
     
     # Function displaying features:
     def display(self):

@@ -32,7 +32,7 @@ def index(request):
 
     # Create an output file:
     file = PDF(array_elements=array_elements)
-
+    
     context = {'form': form}
     return render(request, 'main.html', context)
 
