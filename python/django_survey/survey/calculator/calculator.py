@@ -10,9 +10,9 @@ class Calculator:
         self.system = list(System.objects.all().values())
         
         for i in range (len(self.system)):
-            print("Employer: ", self.system[i]["employer"])
-            print("Element: ", self.array_elements[i])
-            print(self.system[i]["employer"]==self.array_elements[i])
+            print("Border date: ", self.system[i]["border_date"])
+            print("Element: ", self.array_elements[6])
+            print(self.system[i]["border_date"]==self.array_elements[6])
         
     def __str__(self):
         print(f"VALUES: {self.array_elements}")
