@@ -12,7 +12,6 @@ class Calculator:
         self.candidate_system = self.calculate(self.array_elements, self.system)
 
         print(self.candidate_system)
-
         
     def __str__(self):
         print(f"VALUES: {self.array_elements}")
@@ -32,7 +31,7 @@ class Calculator:
                 (self.dates_comparison(array_elements[6], system[i]["border_date"]) == True )):
                 
                 values = {"substract": system[i]["substract"],
-                          "value": system[i]["value"],
+                          "value": system[i]["value"]*float(array_elements[5]),
                           "comment": system[i]["comment"]}
                 candidate_system.append(values)
                 

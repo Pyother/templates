@@ -6,5 +6,5 @@ admin.site.register(Candidate)
 
 @admin.register(System)
 class SystemAdmin(ImportExportModelAdmin):
-    list_display = ('employer', 'substract', 'system', 'value', 'border_date', 'comment')
+    list_display = ('employer', 'substract', 'system', 'value', 'border_date', 'basis','comment')
     

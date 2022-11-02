@@ -30,8 +30,9 @@ class System(models.Model):
     employer = models.CharField("Employer", max_length=100)
     substract = models.CharField("Substract", max_length=100)
     system = models.CharField("System", max_length=100)
-    value = models.IntegerField("Value", max_length=100)
+    value = models.FloatField("Value", max_length=100)
     border_date = models.CharField("Border date", max_length=100)
+    basis = models.CharField("Basis", max_length=100, default="Wynagrodzenie zasadnicze")
     comment = models.CharField("Comment", max_length = 160)
 
     tab = [employer, substract, system, value, border_date, comment]

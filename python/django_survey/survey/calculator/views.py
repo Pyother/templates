@@ -21,17 +21,17 @@ def index(request):
 
             for x in form.cleaned_data:
                 array_elements.append(form[x].value())
+
+            # Create an object of the Calculator class, to compute values:
+            values = Calculator(array_elements=array_elements) 
+
+            # Create an output file:
+            file = PDF(array_elements=array_elements)
                 
             form.save()
         
     print("ARRAY ELEMENTS")
     print(array_elements)
-
-    # Create an object of the Calculator class, to compute values:
-    values = Calculator(array_elements=array_elements) 
-
-    # Create an output file:
-    file = PDF(array_elements=array_elements)
     
     context = {'form': form}
     return render(request, 'main.html', context)
