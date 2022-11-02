@@ -13,9 +13,9 @@ class Candidate(models.Model):
     feature_6 = models.CharField('Feature 6:', max_length=100)
     feature_7 = models.DateField('Feature 7:', default='01/01/2023')
     feature_8 = models.CharField('Feature 8:', max_length=100)
-    feature_9 = models.CharField('Feature 9 (optional):', max_length=100, blank=True)
-    feature_10 = models.CharField('Feature 10 (optional):', max_length=100, blank=True)
-    feature_11 = models.CharField('Feature 11 (optional):', max_length=100, blank=True)
+    feature_9 = models.CharField('Feature 9 (optional):', max_length=100, blank=True, default='Name')
+    feature_10 = models.CharField('Feature 10 (optional):', max_length=100, blank=True, default='Surname')
+    feature_11 = models.CharField('Feature 11 (optional):', max_length=100, blank=True, default='rec@site.com')
     
     # Function displaying features:
     def display(self):
