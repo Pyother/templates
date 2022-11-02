@@ -1,4 +1,5 @@
 from .models import System
+import datetime
 
 class Calculator:
 
@@ -9,10 +10,9 @@ class Calculator:
         self.array_elements = array_elements
         self.system = list(System.objects.all().values())
         
-        for i in range (len(self.system)):
-            print("Border date: ", self.system[i]["border_date"])
-            print("Element: ", self.array_elements[6])
-            print(self.system[i]["border_date"]==self.array_elements[6])
+        date1 = datetime.datetime.strptime(self.array_elements[6], '%d/%m/%Y')
+        date2 = datetime.datetime.strptime(self.system[0]["border_date"], '%d/%m/%Y')
+        print(date1 == date2)
         
     def __str__(self):
         print(f"VALUES: {self.array_elements}")
