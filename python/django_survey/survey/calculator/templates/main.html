@@ -58,9 +58,9 @@
                 color: #000000;
                 cursor: pointer;
                 display: inline-block;
-                font-family: Clarkson,Helvetica,sans-serif;
+                font-family: 'Raleway', sans-serif;
+                font-weight: bold;
                 font-size: 14px;
-                font-weight: 500;
                 letter-spacing: 0;
                 line-height: 1em;
                 margin: 0;
@@ -175,9 +175,13 @@
         <div class="footer">
             <div class="row">
                 <div class="col-sm-4 col-md-4 col-lg-4">
-                    <a href="{% url 'admin:index' %}" style="text-decoration: none; color: clack">Admin</a>
+                    <a href="{% url 'admin:index' %}" 
+                        style="text-decoration: none; color: black;
+                        font-family: Raleway, sans-serif; 
+                        font-weight: bold;">Admin</a>
                 </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="col-sm-4 col-md-4 col-lg-4" style="font-family: Raleway, sans-serif; 
+                    font-weight: bold;">
                     Contact
                 </div>
             </div>

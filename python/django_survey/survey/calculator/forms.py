@@ -20,6 +20,8 @@ class CandidateForm(ModelForm):
             'feature_1': Select(attrs={
                 'class': 'form-control',
                 'style': 
+                    'font-family: Raleway, sans-serif;'
+                    'font-weight: bold;'
                     'width: 700px;'
                     'background-color: rgb(255, 255, 255);'
                     'color:#051937;'
@@ -35,6 +37,8 @@ class CandidateForm(ModelForm):
             'feature_2': Select(attrs={
                 'class': 'form-control',
                 'style': 
+                    'font-family: Raleway, sans-serif;'
+                    'font-weight: bold;'
                     'width: 700px;'
                     'background-color: rgb(255, 255, 255);'
                     'color:#051937;'
@@ -50,6 +54,8 @@ class CandidateForm(ModelForm):
             'feature_3': TextInput(attrs={
                 'class': 'form-control',
                 'style': 
+                    'font-family: Raleway, sans-serif;'
+                    'font-weight: bold;'
                     'width: 700px;'
                     'background-color: rgb(255, 255, 255);'
                     'color:#051937;'
@@ -61,6 +67,8 @@ class CandidateForm(ModelForm):
             'feature_4': TextInput(attrs={
                 'class': 'form-control',
                 'style': 
+                    'font-family: Raleway, sans-serif;'
+                    'font-weight: bold;'
                     'width: 700px;'
                     'background-color: rgb(255, 255, 255);'
                     'color:#051937;'
@@ -72,6 +80,8 @@ class CandidateForm(ModelForm):
             'feature_5': DateInput(attrs={
                 'class': 'form-control',
                 'style': 
+                    'font-family: Raleway, sans-serif;'
+                    'font-weight: bold;'
                     'width: 700px;'
                     'background-color: rgb(255, 255, 255);'
                     'color:#051937;'
@@ -83,6 +93,8 @@ class CandidateForm(ModelForm):
             'feature_6': TextInput(attrs={
                 'class': 'form-control',
                 'style': 
+                    'font-family: Raleway, sans-serif;'
+                    'font-weight: bold;'
                     'width: 700px;'
                     'background-color: rgb(255, 255, 255);'
                     'color:#051937;'
@@ -94,6 +106,8 @@ class CandidateForm(ModelForm):
             'feature_7': TextInput(attrs={
                 'class': 'form-control',
                 'style': 
+                    'font-family: Raleway, sans-serif;'
+                    'font-weight: bold;'
                     'width: 700px;'
                     'background-color: rgb(255, 255, 255);'
                     'color:#051937;'
@@ -105,6 +119,8 @@ class CandidateForm(ModelForm):
             'feature_8': TextInput(attrs={
                 'class': 'form-control',
                 'style': 
+                    'font-family: Raleway, sans-serif;'
+                    'font-weight: bold;'
                     'width: 700px;'
                     'background-color: rgb(255, 255, 255);'
                     'color:#051937;'
@@ -116,6 +132,8 @@ class CandidateForm(ModelForm):
             'feature_9': TextInput(attrs={
                 'class': 'form-control',
                 'style': 
+                    'font-family: Raleway, sans-serif;'
+                    'font-weight: bold;'
                     'width: 700px;'
                     'background-color: rgb(255, 255, 255);'
                     'color:#051937;'
@@ -127,6 +145,8 @@ class CandidateForm(ModelForm):
             'feature_10': TextInput(attrs={
                 'class': 'form-control',
                 'style': 
+                    'font-family: Raleway, sans-serif;'
+                    'font-weight: bold;'
                     'width: 700px;'
                     'background-color: rgb(255, 255, 255);'
                     'color:#051937;'
@@ -138,6 +158,8 @@ class CandidateForm(ModelForm):
             'feature_11': TextInput(attrs={
                 'class': 'form-control',
                 'style': 
+                    'font-family: Raleway, sans-serif;'
+                    'font-weight: bold;'
                     'width: 700px;'
                     'background-color: rgb(255, 255, 255);'
                     'color:#051937;'
