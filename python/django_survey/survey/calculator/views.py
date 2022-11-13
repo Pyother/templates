@@ -1,6 +1,9 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 from multiprocessing import context
 from django.conf import settings
+from django.views.decorators.clickjacking import xframe_options_exempt
+from django.views.decorators.clickjacking import xframe_options_sameorigin
 from .forms import CandidateForm
 from .calculator import Calculator
 from .forms import *
@@ -39,4 +42,10 @@ def index(request):
 def redirect_output(request):
     return render(request, 'output.html')
 
+@xframe_options_exempt
+def ok_to_load_in_a_frame(request):
+    return HttpResponse("This page is safe to load in a frame on any site.")
 
+@xframe_options_sameorigin
+def view_two(request):
+    return HttpResponse("Display in a frame if it's from the same origin as me.")

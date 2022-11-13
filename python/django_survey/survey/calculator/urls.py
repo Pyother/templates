@@ -5,4 +5,4 @@ from .views import *
 urlpatterns = [
     path('', index, name='index'),
     path('output/', redirect_output, name='output')
-]
+] 

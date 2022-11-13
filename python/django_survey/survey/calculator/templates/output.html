@@ -48,6 +48,13 @@
                 align-items: center;
                 padding: 2%;
             }
+            .pdf-content {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 90vh;
+            }
             
         </style>
     </head>
@@ -56,13 +63,12 @@
             {% block content %}
             <div class="container-fluid" style="background: linear-gradient(to left, #93A5CF, #e4efe9);">
                 <div class="header">
-                    
+
                 </div>
             </div>
             <div class="container-fluid" style="background: linear-gradient(to left, #93A5CF, #e4efe9);">
-                <div class="content">
-                    
-                </div>
+                {% load static %}
+                <iframe src="{% static 'Results.pdf' %}" class="pdf-content"></iframe>               
             </div>
             <div class="container-fluid" style="background: linear-gradient(to left, #93A5CF, #e4efe9);">
                 <div class="footer">
@@ -73,11 +79,5 @@
         </main>
     </body>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
-
-        import { jsPDF } from jsPDF;
-        const doc = new jsPDF;
-
-    </script>
 
 </html>
