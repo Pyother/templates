@@ -5,17 +5,17 @@ from .output import PDF
 class Candidate(models.Model):
 
     # All features required in form:
-    feature_1 = models.CharField('Feature 1:', max_length=100)
-    feature_2 = models.CharField('Feature 2:', max_length=100)
-    feature_3 = models.CharField('Feature 3:', max_length=100)
-    feature_4 = models.CharField('Feature 4:', max_length=100)
-    feature_5 = models.CharField('Feature 5:', max_length=100)
-    feature_6 = models.CharField('Feature 6:', max_length=100)
-    feature_7 = models.DateField('Feature 7:', default='01/01/2023')
-    feature_8 = models.CharField('Feature 8:', max_length=100)
-    feature_9 = models.CharField('Feature 9:', max_length=100, default='Name')
-    feature_10 = models.CharField('Feature 10:', max_length=100, default='Surname')
-    feature_11 = models.CharField('Feature 11:', max_length=100, default='rec@site.com')
+    feature_1 = models.CharField('Pracodawca:', max_length=100)
+    feature_2 = models.CharField('System wynagradzania:', max_length=100)
+    feature_3 = models.CharField('Imię:', max_length=100)
+    feature_4 = models.CharField('Nazwisko:', max_length=100)
+    feature_5 = models.CharField('Płeć:', max_length=100)
+    feature_6 = models.CharField('Proponowane wynagrodzenie zasadnicze (PLN):', max_length=100)
+    feature_7 = models.DateField('Przewidywana data zatrudnienia:', default='01/01/2023')
+    feature_8 = models.CharField('Dodatek funkcyjny:', max_length=100)
+    feature_9 = models.CharField('Imię rekrutera:', max_length=100, default='Name')
+    feature_10 = models.CharField('Nazwisko rekrutera:', max_length=100, default='Surname')
+    feature_11 = models.CharField('E-mail rekrutera:', max_length=100, default='rec@site.com')
     
     # Function displaying features:
     def display(self):

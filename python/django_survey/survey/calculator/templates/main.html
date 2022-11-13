@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
     <head>
         <meta charset="UTF-8">
         <title>Survey Site</title>
@@ -164,7 +164,9 @@
                 {{form|crispy}}<br><br>
             <button class="button-48" role="button" type="submit">
                 <span class="text">
-                    Submit answers
+                    <a href="{% url 'output' %}" style="color: black;">
+                        Zatwierdź odpowiedzi
+                    </a>
                 </span>
             </button>
         </div>
@@ -174,15 +176,15 @@
     <div class="container-fluid" style="padding: 0px;">
         <div class="footer">
             <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="col-sm-4 col-md-4 col-lg-4" style="width: 60%; display: flex; text-align: center; justify-content: center;">
                     <a href="{% url 'admin:index' %}" 
                         style="text-decoration: none; color: black;
                         font-family: Raleway, sans-serif; 
-                        font-weight: bold;">Admin</a>
+                        font-weight: bold;">Panel Administracyjny</a>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4" style="font-family: Raleway, sans-serif; 
-                    font-weight: bold;">
-                    Contact
+                    font-weight: bold; ">
+                    Kontakt
                 </div>
             </div>
         </div>
