@@ -5,7 +5,6 @@ from calculator.models import *
 from calculator.views import *
 from django import forms
 
-
 class SystemForm(ModelForm):
     class Meta:
         model = System
@@ -113,7 +112,7 @@ class CandidateForm(ModelForm):
                     'box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;'  
             }),
 
-            'feature_7': TextInput(attrs={
+            'feature_7': DateInput(attrs={
                 'class': 'form-control',
                 'style': 
                     'font-family: Raleway, sans-serif;'
@@ -177,7 +176,6 @@ class CandidateForm(ModelForm):
                     'border-radius: 0px;'
                     'box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;'  
             })
-
         }
         
 

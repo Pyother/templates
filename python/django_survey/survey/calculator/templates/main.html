@@ -158,16 +158,22 @@
 
     <div class="container-fluid" style="padding: 0px;">
         <div class="content" id="sectionContent">
-            <form class="my-form" action="{% url 'output' %}" method="post">
-                    {% csrf_token %}
-                    {{form|crispy}}<br><br>
-                    <button class="button-48" role="button" type="submit">
-                        <span class="text">
-                            Zatwierdź odpowiedzi
-                        </span>
-                    </button>
-                </div>
+            <a href="{% url 'output' %}">
+                <button class="button-48">
+                    Zobacz poprzednio wygenerowany PDF
+                </button>
+            </a>
+            <br><br>
+            <form class="my-form" action="" method="post">
+                {% csrf_token %}
+                {{form|crispy}}<br><br>
+                <button class="button-48" role="button" type="submit">
+                    <span class="text">
+                        Zatwierdź odpowiedzi
+                    </span>
+                </button>
             </form>
+        </div>
     </div>
 
     <div class="container-fluid" style="padding: 0px;">

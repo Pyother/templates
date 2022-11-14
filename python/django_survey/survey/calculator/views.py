@@ -4,6 +4,8 @@ from multiprocessing import context
 from django.conf import settings
 from django.views.decorators.clickjacking import xframe_options_exempt
 from django.views.decorators.clickjacking import xframe_options_sameorigin
+from django.forms import formset_factory
+from .output import PDF
 from .forms import CandidateForm
 from .calculator import Calculator
 from .forms import *
@@ -22,6 +24,8 @@ def index(request):
         # Save form values to the list:
         if form.is_valid():
 
+            print("FORM IS VALID")
+
             for x in form.cleaned_data:
                 array_elements.append(form[x].value())
 
@@ -31,7 +35,16 @@ def index(request):
             # Create an output file:
             file = PDF(array_elements=array_elements)
                 
-            form.save()
+    form.save()
+
+    for x in form.cleaned_data:
+        array_elements.append(form[x].value())
+
+    # Create an object of the Calculator class, to compute values:
+    values = Calculator(array_elements=array_elements) 
+
+    # Create an output file:
+    file = PDF(array_elements=array_elements)
         
     print("ARRAY ELEMENTS")
     print(array_elements)
