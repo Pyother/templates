@@ -27,7 +27,7 @@ class PDF():
             self.file.cell(w=17, h=10, txt=array_elements[i], border=1)
         self.file.multi_cell(w=1, h=10, txt="")
 
-        self.file.output('calculator\output\Results.pdf')
+        self.file.output('static\Results.pdf')
 
     def __str__(self):
         print(f"OUTPUT: {self.array_elements}")

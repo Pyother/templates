@@ -114,7 +114,6 @@ USE_TZ = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
@@ -122,9 +121,7 @@ IMPORT_EXPORT_USE_TRANSACTIONS = True
 
 STATIC_URL = "static/"
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
